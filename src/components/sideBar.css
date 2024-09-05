@@ -51,10 +51,9 @@
     .toggle-sidebar #footer {
         margin-left: 0;
     }
-}
-
-.toggle-sidebar .sidebar {
+    .toggle-sidebar .sidebar {
     left: -300px;
+    }
 }
 
 .sidebar-nav {

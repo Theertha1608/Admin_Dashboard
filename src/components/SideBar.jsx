@@ -1,5 +1,7 @@
 import React from 'react'
 import './sideBar.css'
+import navList from '../data/navItems';
+import NavItem from './NavItem';
 
 function SideBar() {
     return(
@@ -190,6 +192,12 @@ function SideBar() {
                 </li>
             </ul>
         </li>
+
+        <li className='nav-heading'>Pages</li>
+        {navList.map(nav =>(
+            <NavItem key={nav._id} nav={nav}/>
+        ))}
+
     </ul>
 </aside>
 );
