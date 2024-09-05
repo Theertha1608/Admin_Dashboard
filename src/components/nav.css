@@ -30,7 +30,7 @@
     font-weight: 600;
 }
 
-.header-navbadge-number {
+.header-nav .badge-number {
     position: absolute;
     inset: 2px 5px auto auto;
     font-weight: normal;
