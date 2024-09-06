@@ -5,7 +5,7 @@ const navList = [
         icon: 'bi bi-person',
     }, {
         _id: 2,
-        name: 'Login',
+        name: 'Contact',
         icon: 'bi bi-envelope',
     },
     {

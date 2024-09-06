@@ -4,7 +4,7 @@ function NavItem({ nav })  {
   return (
     <li className='nav-item' key={nav._id}>
         <a className='nav-link collapsed' href='#'>
-            <i className={nav._id}></i>
+            <i className={nav.icon}></i>
             <span>{nav.name}</span>
         </a>
     </li>
