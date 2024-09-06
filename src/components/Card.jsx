@@ -33,8 +33,8 @@ function Card({ card }) {
                                 } small pt-1 fw-bold`}
                             >
                                 {card.percentage > 0
-                                    ? (card.percentage * 100).toFixed(2)
-                                    : (-card.percentage * 100).toFixed(2)}
+                                    ? card.percentage * 100
+                                    : -card.percentage * 100}
                                 %
                             </span>
                             <span className="text-muted small pt-2 ps-1">
