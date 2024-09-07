@@ -1,9 +1,9 @@
 .dashboard .activity {
-    font-size: 10px;
+    font-size: 12px;
 }
 
-.dashboard-activity .activity-item .activite-label {
-    color: #888;
+.dashboard .activity .activity-item .activite-label {
+    color: #a18e8e;
     position: relative;
     flex-shrink: 0;
     flex-grow: 0;
@@ -27,7 +27,7 @@
     line-height: 0;
     border-radius: 50%;
     flex-shrink: 0;
-    border: 3px solid #fff;
+    border: 3px solid #ffffff66;
     flex-grow: 0;
 }
 
