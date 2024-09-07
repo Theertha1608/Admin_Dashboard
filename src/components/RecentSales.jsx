@@ -27,7 +27,7 @@ function RecentSales() {
   
 <div className='card-body pb-0'>
     <h5 className='card-title'>
-        Top Selling <span> | {filter} </span>
+        Recent Sales <span> | {filter} </span>
     </h5>
         <CardFilter filterChange={handleFilterChange}/>
       <RecentSalesTable items={sales} />
