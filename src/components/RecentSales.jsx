@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import RecentSalesTable from './RecentSalesTable';
+import './recentSales.css'
+import CardFilter from './CardFilter';
 
 function RecentSales() {
   const [sales, setSales] = useState([]);
+  const [filter, setFilter] = useState('Today');
+    const handleFilterChange = filter => {
+        setFilter(filter);
+    };
 
   const fetchSalesData = () => {
     fetch('http://localhost:5000/recentsales')
@@ -16,10 +22,16 @@ function RecentSales() {
   useEffect(() => {
     fetchSalesData();  
   }, []);
-
   return (
-    <div>
+    <div className='card recent-sales table overflow-auto dataTable-top'>
+  
+<div className='card-body pb-0'>
+    <h5 className='card-title'>
+        Top Selling <span> | {filter} </span>
+    </h5>
+        <CardFilter filterChange={handleFilterChange}/>
       <RecentSalesTable items={sales} />
+    </div>
     </div>
   );
 }
